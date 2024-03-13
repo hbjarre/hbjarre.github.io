@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Important employee survey</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/lologo.png">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <img src="images/logo-wide.svg">
+            </div>
+        </nav>
+
+        <div class="information">
+            <div>
+                <h1>Global score</h1>
+                <table>
+                    <tr>
+                        <td>Skate</td>
+                        <td id="skate_score">0</td>
+                    </tr>
+                    <tr>
+                        <td>Merch</td>
+                        <td id="merch_score">0</td>
+                    </tr>
+                    <tr>
+                        <td>Pets</td>
+                        <td id="pets_score">0</td>
+                    </tr>
+                    <tr>
+                        <td>Lolo code</td>
+                        <td id="lolo_score">0</td>
+                    </tr>
+                    <tr>
+                        <td>Amount of votes</td>
+                        <td id="count_score">0</td>
+                    </tr>
+                </table>
+                
+                <button onclick="info()">Update score</button>
+            </div>
+            <br>
+            <div class="options">
+                <h1>Vote here!</h1>
+                <form action="JavaScript:vote()">
+                    <table>
+                        <tr>
+                            <td><label for="skate">Skate </label></td>
+                            <td><input type="range" id="skate" min="0" max="5" name="skate"/></td>
+                        </tr>
+                        <tr>    
+                            <td><label for="merch">Merch</label></td>
+                            <td><input type="range" id="merch" min="0" max="5" name="merch"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="pets">Pets</label></td>
+                            <td><input type="range" id="pets" min="0" max="5" name="pets"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="lolo">Lolo code</label></td>
+                            <td><input type="range" id="lolo" min="0" max="5" name="lolo"></td>
+                        </tr>
+                    </table>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
