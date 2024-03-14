@@ -1,4 +1,4 @@
-const http_url = "https://be.dev.pvpc.io/swBFH8dDShAjJLGRt8gnNx";
+const http_url = "https://eu-1.lolo.co/swBFH8dDShAjJLGRt8gnNx";
 
 async function info(){
     const response = await (await fetch(`${http_url}/info`, {method: "GET"})).json();
